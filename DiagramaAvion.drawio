@@ -1,0 +1,76 @@
+<mxfile host="65bd71144e">
+    <diagram id="AzLXJ-tuYh4hqJ3aeI0v" name="Page-1">
+        <mxGraphModel dx="964" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Passenger" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="90" width="160" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="- name : string&#10;- phone : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2">
+                    <mxGeometry y="26" width="160" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2">
+                    <mxGeometry y="70" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="+ Passenger( )&#10;+ setName( ) : void&#10;+ setPhone( ) : void&#10;+ getName( ) : string&#10;+ getPhone( ) : string&#10;+ ~Passenger( ) : virtual" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2">
+                    <mxGeometry y="78" width="160" height="102" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Flight" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="100" width="260" height="510" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="- date : string &#10;- hour : string &#10;- price : float&#10;- airplaneModel : string &#10;- fromTo : string &#10;- distance : float&#10;- crew : string &#10;- fuel : float&#10;- seats[] : Passenger" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
+                    <mxGeometry y="26" width="260" height="144" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="6">
+                    <mxGeometry y="170" width="260" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="+ Flight( )&#10;+ setDate( ) : void&#10;+ setHour( ) : void&#10;+ setPrice( ) : void&#10;+ setAirplaneModel( ) : void&#10;+ setFromTo( ) : void&#10;+ setDistance( ) : void&#10;+ setCrew( ) : void&#10;+ setFuel( ) : void&#10;+ setSeats( Passenger seats [ ], int size) : void &#10;+ getDate( ) : string&#10;+ getHour( ) : string&#10;+ getPrice( ) : float&#10;+ getAirplaneModel( ) : string&#10;+ getFromTo( ) : string&#10;+ getDistance( ) : float&#10;+ getCrew( ) : string&#10;+ getFuel( ) : float&#10;+ getSeats( ) : Passenger*&#10;+ calculateFuel( ) : float&#10;+ ~Flight( ) : virtual" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
+                    <mxGeometry y="178" width="260" height="332" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.008;exitY=0.104;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="5" target="7">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="270" y="190" as="sourcePoint"/>
+                        <mxPoint x="430" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="Airline" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="110" width="260" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="- boardingCity : string &#10;- shortName : string &#10;- incomes : float&#10;- flights[] : Flight" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="11">
+                    <mxGeometry y="26" width="260" height="74" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11">
+                    <mxGeometry y="100" width="260" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="+ Airline( )&#10;+ setBoardingCity( ) : void&#10;+ setShortName( ) : void&#10;+ setIncomes( ) : void&#10;+ setFlights( Flight flights [ ], int size) : void &#10;+ getBoardingCity( ) : string&#10;+ getShortName( ) : string&#10;+ getIncomes( ) : float&#10;+ getFlights( ) : Flight*&#10;+ updateAirline( ) : void&#10;+ sheduleFlights( ) : void&#10;+ currentIncome( ) : float&#10;+ closeOperations( ) : void &#10;+ ~Airline( ) : virtual" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="11">
+                    <mxGeometry y="108" width="260" height="222" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=-0.013;entryY=0.179;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.013;exitY=0.704;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="7" target="14">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="610" y="210" as="sourcePoint"/>
+                        <mxPoint x="750" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="Airport" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="1000" y="110" width="260" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="- id : int &#10;- city : string &#10;- date : string&#10;- country : string &#10;- totalTransactions : int &#10;- totalDailyIncomes : float&#10;- airlines[ ] : Airline" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="17">
+                    <mxGeometry y="26" width="260" height="114" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="17">
+                    <mxGeometry y="140" width="260" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="+ Airport( )&#10;+ setId( ) : void&#10;+ setCity( ) : void&#10;+ setDate( ) : void&#10;+ setCountry( ) : void&#10;+ setTotalTran( ) : void&#10;+ setTotalInc( ) : void&#10;+ setAirlines( Airline airlines [ ], int size) : void &#10;+ getId( ) : int&#10;+ getCity( ) : string&#10;+ getDate( ) : string&#10;+ getCountry( ) : string&#10;+ getTotalTran( ) : int&#10;+ getTotalInc( ) : float&#10;+ getAirlines( ) : Airline*&#10;+ startOperations( string date ) : void&#10;+ printAllFlights( ) : void&#10;+ printFlightsSchedule( ) : void&#10;+ closeOperations( ) : void&#10;+ ~Airport( ) : virtual" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="17">
+                    <mxGeometry y="148" width="260" height="332" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=-0.011;entryY=0.832;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="18">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="910" y="270" as="sourcePoint"/>
+                        <mxPoint x="990" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
